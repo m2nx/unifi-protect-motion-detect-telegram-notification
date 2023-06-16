@@ -1,7 +1,8 @@
 ### Introduce
 This python script is using UniFi API to  get `latest` `specific` camera detection video from UniFi Protect and send it to telegram. The script is not perfect. It's just a `it works` tool which is very simple.
 
-![Telegram copy](https://github.com/m2nx/unifi-protect-motion-detect-telegram-notification/assets/16236902/0bdf8a54-8a3b-419d-8c0f-8171f8b5e0bb)
+![Telegram copy](https://github.com/m2nx/unifi-protect-motion-detect-telegram-notification/assets/16236902/56701c98-aaa3-48a1-a56e-68a0ce850b1a)
+
 
 ### Required steps
 1. you need to register a telegram bot to get `BOT_TOKEN` first.
@@ -34,7 +35,8 @@ this script use `shelve` built-in package. when you run -v in `docker `command. 
 
 use `docker logs -f unifi-protect-motion-detect-telegram-notification -f --tail 500` to check the log
 
-![image](https://github.com/m2nx/unifi-protect-motion-detect-telegram-notification/assets/16236902/76ed8eab-eaa9-41bc-b34a-82e9502d5c59)
+![image](https://github.com/m2nx/unifi-protect-motion-detect-telegram-notification/assets/16236902/b9ba8022-1581-4d68-8d23-7117a7dd4bf8)
+
 
 ### API
 `https://${UNIFI_HOST_IP}/proxy/protect/api/events?allCameras=true&end&limit=100&orderDirection=DESC&start&types=motion&types=ring&types=smartDetectZone&types=smartDetectLine`
